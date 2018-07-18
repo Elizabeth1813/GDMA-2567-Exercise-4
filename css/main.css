@@ -106,6 +106,60 @@
 .col-5-6{
 	width: 83.33%;
 }
+.col-1-7{
+	width: 14.28%;
+}
+.col-3-7{
+	width: 42.84%;
+}
+.col-4-7{
+	width: 57.12%;
+}
+.col-1-8{
+	width: 12.50%
+}
+.col-7-8{
+	width: 87.50%;
+}
+.col-1-9{
+	width: 11.11%;
+}
+.col-4-9{
+	width: 44.44%;
+}
+.col-5-9{
+	width: 55.55%;
+}
+.col-1-10{
+	width: 10%;
+}
+.col-3-10{
+	width: 30%;
+}
+.col-7-10{
+	width: 70%;
+}
+.col-1-11{
+	width: 9.09%;
+}
+.col-4-11{
+	width: 36.36%;
+}
+.col-7-11{
+	width: 63.63%;
+}
+.col-1-12{
+	width: 8.33%
+}
+.col-5-12{
+	width: 41.65%;
+}
+.col-7-12{
+	width: 58.31%;
+}
+.col-5-12, .col-7-12{
+		margin-bottom: 0;
+	}
 [class*="col-"] div{
 	height: 50px;
 	background-color: orange; /* will also delete */
@@ -119,19 +173,22 @@
 	.wrapper{
 		width: 95%;
 	} 
-	.col-1-4, .col-3-4{
+	.col-1-4, .col-3-4, .col-1-8, .col-7-8, .col-1-10, .col-1-12{
 		width: 50%;
 	}
-	.col-1-4:nth-child(even), .col-1-5, .col-1-6:nth-child(3){
+	.col-1-4:nth-child(even), .col-1-5, .col-1-6:nth-child(3), .col-1-7, .col-1-8:nth-child(even), .col-1-9:nth-child(3), .col-1-9:nth-child(6), .col-1-10:nth-child(even), .col-1-11, .col-1-12:nth-child(even){
 		padding-right: 0;
 	}
-	.col-1-5{
+	.col-1-5, .col-1-7, .col-1-11{
 		width: 100%;
 	}
-	.col-1-6{
+	.col-1-6, .col-1-9{
 		width: 33.33%;
 	}
 	.col-5-6{
 		width: 66.66%;
+	}
+	.col-5-12, .col-7-12{
+		margin-bottom: 0;
 	}
 }
